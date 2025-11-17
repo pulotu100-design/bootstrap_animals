@@ -1,0 +1,153 @@
+header {
+    background-image: linear-gradient(135deg, #1655f5, #00a8ff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel img {
+    height: 450px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+/* Smooth hover animation for animal cards */
+.animal-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.animal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Zoom image on hover */
+.image-wrapper {
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    transition: transform 0.4s ease;
+}
+
+.animal-card:hover img {
+    transform: scale(1.08);
+}
+
+.animal-section {
+    background-color: #8dcaff; /* bright blue */
+}
+
+/* Fade + Slide Animation for Collapse */
+.animate-fade-slide {
+    animation: fadeSlide 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+@keyframes fadeSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* List Item Hover Animation */
+.list-group-item {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.list-group-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Staggered Fade-In for Each Fact */
+.stagger-item {
+    opacity: 0;
+    animation: staggerFade 0.6s ease forwards;
+}
+
+@keyframes staggerFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Automatic delays for each fact */
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(6) { animation-delay: 0.6s; }
+.stagger-item:nth-child(7) { animation-delay: 0.7s; }
+
+
+/* Rounded corners + shadow */
+#animalCarousel img {
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Darkened caption background for readability */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    padding: 10px 20px;
+    animation: captionFade 1s ease;
+}
+
+/* Caption fade animation */
+@keyframes captionFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fix carousel image sizing + center the animal */
+#animalCarousel .carousel-item img {
+    height: 500px; /* adjust if needed */
+    object-fit: cover; /* fill area without distortion */
+    object-position: center; /* keep animal centered */
+    width: 100%;
+}
+
+/* Border between all sections */
+.border-section {
+    border-top: 3px solid #000000; /* Blue border */
+    padding-top: 60px;
+    margin-top: 40px;
+}
+
+/* CSS for Footer */
+.site-footer {
+    background-color: #333;       /* Dark background */
+    color: #fff;                  /* White text */
+    text-align: center;           /* Center the text */
+    padding: 20px 0;              /* Top and bottom padding */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-top: 3px solid #555;   /* Optional top border for style */
+}
+
+.site-footer p {
+    margin: 0;                    /* Remove default margin */
+}
