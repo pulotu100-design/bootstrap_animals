@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Animals</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <div class="container-fluid">
+          <a class="navbar-brand" href="#">Animal World</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#animals">Animals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+           </div>
+        </div>
+    </nav>
+
+    <header id="home" class="bg-primary text-white text-center p-5">
+        <h1 class="display-4">Welcome to the Animal World</h1>
+        <p class="lead">Explore amazing creatures through photos I've captured through zoo's and everday life</p>
+
+        <button class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="right" title="These are my own photos!">
+            Hover for Fun Fact
+        </button>
+    </header>
+
+    <section id="animals" class="py-5" style="background-color: #7ecbff;">
+        <div class="row g-4">
+            <h2 class="text-center mb-4">Animals</h2>
+            <p class="text-center mb-5">Here are some of the animals I've photographed from zoos and everyday nature walks.</p>
+    
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/snail.jpg" class="card-img-top" alt="Sea snail from a hawaiian beach.">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Beach Snail</h5>
+                        <p class="card-text">A small sea snail we found at a black sand beach in Hawaii.</p>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#snailModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/butterfly.jpg" class="card-img-top" alt="Pretty butterfly in my back door steps.">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Butterfly</h5>
+                        <p class="card-text">A blue-winged butterfly resting near my backdoor steps.</p>
+                        
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#butterflyModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/deer.jpg" class="card-img-top" alt="Couple of Deers in my neighbors yard">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">White Tailed Deers</h5>
+                        <p class="card-text">Couple Deers grazing quietly in the woods near my home.</p>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deerModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/turtle.jpg" class="card-img-top" alt="Small Turtle that was walking on the road">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Turtle</h5>
+                        <p class="card-text">A calm turtle near a road.</p>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#turtleModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/hawk.jpg" class="card-img-top" alt="Hawk on the top of a tree.">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hawk</h5>
+                        <p class="card-text">A hawk perched high above scanning the area.</p>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hawkModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/wolf.jpg" class="card-img-top" alt="Wolf brothers standing guard">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Grey Wolf</h5>
+                        <p class="card-text">Wolf brothers standing guard at the zoo.</p>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wolfModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/elephants.jpg" class="card-img-top" alt="Two elephants in a calmly presence">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Elephants</h5>
+                        <p class="card-text">Some majestic elephants in a calmly presence.</p>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#elephantModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/sheep.jpg" class="card-img-top" alt="Cute fluffy sheep grazing grass">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sheep</h5>
+                        <p class="card-text">Cute fluffy sheep chilling in the shade.</p>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sheepModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="animal-card card h-100">
+                    <div class="image-wrapper">
+                        <img src="images/stallion.jpg" class="card-img-top" alt="Strong stallion">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Stallion</h5>
+                        <p class="card-text">A strong stallion in the staples.</p>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#stallionModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="favorites" class="py-5" style="background-color:#7edaff">
+        <div class="container">
+           <h2 class="text-center mb-4">Top 3 Favorite Animals</h2>
+             <div id="animalCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#animalCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#animalCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#animalCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/elephants.jpg" class="d-block w-100" alt="Elephant">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Elephant</h5>
+                        <p>Gentle giants known for intelligence and strong family bonds.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/wolf.jpg" class="d-block w-100" alt="Wolf">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Wolf</h5>
+                        <p>Highly social animals who rely on teamwork and communication.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/sheep.jpg" class="d-block w-100" alt="Sheep">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Sheep</h5>
+                        <p>Gentle grazers with surprising intelligence and excellent memory.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#animalCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#animalCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+           </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+       <h2 class="text-center mb-3">Fun Animal Facts</h2>
+
+       <p class="text-center">
+        <button class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#funFactsCollapse"
+                aria-expanded="false"
+                aria-controls="funFactsCollapse">
+            Show Fun Facts
+        </button>
+        </p>
+
+        <div class="collapse fade" id="funFactsCollapse">
+            <div class="card card-body animate-fade-slide">
+                <ul class="list-group">
+                   <li class="list-group-item stagger-item">
+                       A snail can enter a deep hibernation state during hot or dry conditions. While in this state, they seal themselves inside their shell and can stay inactive for years until moisture returns.
+                    </li>
+                    <li class="list-group-item stagger-item">
+                       Butterflies have tiny chemoreceptors on their legs that help them “taste” the plants they land on. This allows them to quickly check if a plant is safe and nutritious before eating or laying eggs.
+                    </li>
+                    <li class="list-group-item stagger-item">
+                       Elephants are extremely heavy (up to 12,000 lbs), and their legs are designed for supporting weight, not jumping. Instead, they rely on strength and stability, and they can run surprisingly fast despite their size.
+                    </li>
+                    <li class="list-group-item stagger-item">
+                       A Wolf's sense of smell is incredibly powerful—over 40 times better than a human's. They use it to track prey from miles away, identify pack members, and even sense changes in the environment.
+                    </li>
+                    <li class="list-group-item stagger-item">
+                        During winter, certain turtles use a special part of their body called the cloaca to absorb oxygen from the water. It's an efficient way to breathe when they are submerged and too cold to surface.
+                    </li>
+                    <li class="list-group-item stagger-item">
+                        Sheep are surprisingly smart. They can recognize and remember the faces of other sheep — and even humans — for up to two years. Their strong memory helps them navigate social groups.
+                    </li>
+                    <li class="list-group-item stagger-item">
+                        Hawks have extremely sharp vision — about 8 times better than humans. Their eyes pick up movement and detail from great distances, allowing them to hunt with pinpoint accuracy.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 border-section">
+       <div class="container">
+          <h2 class="text-center mb-4">Contact Me</h2>
+
+        <form class="row g-3">
+            <!-- Name -->
+            <div class="col-md-6">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-6">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+
+            <!-- Dropdown -->
+            <div class="col-md-12">
+                <label for="animalSelect" class="form-label">Favorite Animal</label>
+                <select id="animalSelect" class="form-select">
+                    <option selected disabled>Select one...</option>
+                    <option>Snail</option>
+                    <option>Butterfly</option>
+                    <option>Deer</option>
+                    <option>Stallion</option>
+                    <option>Elephant</option>
+                    <option>Hawk</option>
+                    <option>Turtle</option>
+                    <option>Wolf</option>
+                    <option>Sheep</option>
+                </select>
+            </div>
+
+            <!-- Message -->
+            <div class="col-12">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" class="form-control" rows="4" placeholder="Write something..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary px-4">Submit</button>
+            </div>
+
+        </form>
+       </div>
+    </section>
+
+    <footer class="site-footer">
+       <p>&copy; 2025 Tevita Saafi | ITD 210</p>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Snail Modal -->
+<div class="modal fade" id="snailModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Beach Snail</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/snail.jpg" class="img-fluid rounded mb-3">
+        <p>
+            This small snail was slowly moving across the black sand beach in Hawaii. Its shell had unique patterns, which captured my attentions of how stood out it was. I also feel like snails in Hawaii are probably bigger, 
+            then the ones back in Virginia in my opinon.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Butterfly Modal -->
+<div class="modal fade" id="butterflyModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Blue Butterfly</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/butterfly.jpg" class="img-fluid rounded mb-3">
+        <p>
+            While I was on my way to gather the trash cans, I found this delicate butterfly resting near the doorway. Its blue wings shimmered in the sun and has pretty patterns. Normally butterflies would fly away, when people get close to them, 
+            but this one didn't; maybe my guess it's probably sleeping or maybe having a moment of peace.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Deer Modal -->
+<div class="modal fade" id="deerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">White-Tailed Deer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/deer.jpg" class="img-fluid rounded mb-3">
+        <p>
+            While I was walking home from school, I noticed a couple of deers that were grazing on grass at one of my neighbors yard, and as the deers noticed me, we we're having a little staring contenst as you can tell through the picture. But I 
+            decided to move very gently because I know how shy deers can be. But I thought a quick photo will create memories of that moment. 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Stallion Modal -->
+<div class="modal fade" id="stallionModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Stallion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/stallion.jpg" class="img-fluid rounded mb-3">
+        <p>
+            This photo was taken during my times at Busch Gardens, when me and my friend discoverd that the place has a zoo of animals. We first found a horse staples, and that's when we saw a Clydesdale horse. What I like about this horse is that it's 
+            probably the strongest horse on the planet, and how big those horse shoes are.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Elephant Modal -->
+<div class="modal fade" id="elephantModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Elephant</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/elephants.jpg" class="img-fluid rounded mb-3">
+        <p>I photographed these majestic elephants during a zoo trip in Washington DC. Its size and calm presence were incredible to see up close. Elephants will always be my favorite animals because they are intellegent, strong, and peaceful creatures to endure.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hawk Modal -->
+<div class="modal fade" id="hawkModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Red-Tailed Hawk</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/hawk.jpg" class="img-fluid rounded mb-3">
+        <p>
+            Another day in the summer, when I discovered a few shadows zooming across the trees in my backyard, and as I investigated, it turned out to be a hawk or maybe an eagle that's sitting on top of a tree. Which I think it's probably on patrol by scanning my whole neighborhood area.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Turtle Modal -->
+<div class="modal fade" id="turtleModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Turtle</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/turtle.jpg" class="img-fluid rounded mb-3">
+        <p>
+            While my parents and I were driving, we discovered something moving in the middle of the road, and it turned out to be turtle. It was dangerous for slow gentle reptile to wander around in a busy road, so we decided to pull over and helped the turtle across the other side.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Wolf Modal -->
+<div class="modal fade" id="wolfModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Grey Wolf</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/wolf.jpg" class="img-fluid rounded mb-3">
+        <p>
+            This was another photo during my times in Busch Gardens zoo, as my friend and I saw wolves along our way. They two wolves look like they are a brother duo who are standing by their sides like a wolf pack would do. Very ammusing.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sheep Modal -->
+<div class="modal fade" id="sheepModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sheep</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/sheep.jpg" class="img-fluid rounded mb-3">
+        <p>
+            This picture is also another moment in Busch Gardens, as the zoo also has a petting zoo as well. Pretty much the cute fluffy sheep are chilling in the shade because of how hot it was during that time.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
